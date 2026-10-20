@@ -1,0 +1,6 @@
+# robots.txt for Naf3ly Tools (نفعلي)
+User-agent: *
+Allow: /
+
+# Sitemaps (Replace domain with your production domain upon deployment)
+Sitemap: https://naf3ly-tools.pages.dev/sitemap.xml

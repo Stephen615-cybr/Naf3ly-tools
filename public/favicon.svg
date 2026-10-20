@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="dotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#brandGrad)" filter="url(#shadow)"/>
+
+  <!-- Subtle Inner Border Highlight -->
+  <rect x="36" y="36" width="440" height="440" rx="108" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="6"/>
+
+  <!-- Dynamic Arabic Noon 'ن' / Utility Crescent Structure -->
+  <path d="M 140 220 
+           C 140 330, 210 380, 256 380 
+           C 302 380, 372 330, 372 220 
+           C 372 200, 348 200, 348 220 
+           C 348 300, 296 342, 256 342 
+           C 216 342, 164 300, 164 220 
+           C 164 200, 140 200, 140 220 Z" 
+        fill="#ffffff" />
+
+  <!-- Nuqta (Dot of Noon) styled as a Radiant Diamond Spark -->
+  <path d="M 256 130 
+           L 286 160 
+           L 256 190 
+           L 226 160 Z" 
+        fill="url(#dotGrad)" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Mini Tool Utility Sparkle -->
+  <circle cx="360" cy="155" r="14" fill="#67e8f9" opacity="0.9" />
+</svg>
